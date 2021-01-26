@@ -51,7 +51,7 @@
   margin-left: 10px;
 }
 
-/* * --- --- ---  form AGREGAR --- --- --- */
+/* * --- --- ---  FORM ADD --- --- --- */
 
 .form-tasks {
   display: flex;
@@ -85,20 +85,20 @@
   cursor: pointer;
 }
 
-.form-tasks__icono-btn {
+.form-tasks__icon-btn {
   font-size: 22px;
   color: var(--verde);
 }
 
-/* * --- --- ---  LISTA tasks --- --- --- */
+/* * --- --- ---  LIST tasks --- --- --- */
 
-.lista-tasks {
+.list-tasks {
   list-style: none;
   height: 100%;
   overflow: auto;
 }
 
-.lista-tasks__task {
+.list-tasks__task {
   height: 60px;
   padding: 0 20px;
   align-items: center;
@@ -108,40 +108,40 @@
   grid-template-columns: auto 1fr auto;
 }
 
-.lista-tasks__texto {
+.list-tasks__text {
   text-align: left;
   width: 100%;
 }
 
-.lista-tasks__task:hover .lista-tasks__icono-accion {
+.list-tasks__task:hover .list-tasks__icon-action {
   opacity: 0.5;
 }
 
-.lista-tasks__task:nth-child(even) {
+.list-tasks__task:nth-child(even) {
   background: #F3F3F3;
 }
 
-.lista-tasks__container-buttons {
+.list-tasks__container-buttons {
   display: flex;
 }
 
-.lista-tasks__icono {
+.list-tasks__icon {
   cursor: pointer;
   font-size: 16px;
 }
 
-.lista-tasks__icono-check {
+.list-tasks__icon-check {
   margin-right: 20px;
   font-size: 26px;
 }
 
-.lista-tasks__icono-accion {
+.list-tasks__icon-action {
   margin-left: 20px;
   opacity: 0;
   transition: .3s ease all;
 }
 
-.lista-tasks__mensaje {
+.list-tasks__message {
   text-align: center;
   color: #b8b8b8;
   font-size: 20px;

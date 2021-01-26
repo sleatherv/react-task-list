@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import FormTasks from './components/FormTasks';
+import TasksList from './components/TasksList';
 
 const App = () => {
   const [tasks, changeTasks] = useState(
@@ -23,6 +24,7 @@ const App = () => {
     <div className='container'>
       <Header />
       <FormTasks tasks={tasks} changeTasks={changeTasks} />
+      <TasksList tasks={tasks} />
     </div>
   );
 }
