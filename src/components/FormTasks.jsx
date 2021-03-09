@@ -37,7 +37,7 @@ const FormTasks = ({ tasks, changeTasks }) => {
                 className='form-tasks__btn'
             >
                 <FontAwesomeIcon
-                    icon={faPlusSquare} className='form-tasks__icono-btn'
+                    icon={faPlusSquare} className='form-tasks__icon-btn'
                 />
             </button>
         </form>

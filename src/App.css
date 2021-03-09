@@ -148,13 +148,13 @@
   padding: 40px 20px;
 }
 
-/* * --- --- ---  form EDITAR task --- --- --- */
+/* * --- --- ---  form EDIT task --- --- --- */
 
-.form-editar-task {
+.form-edit-task {
   display: flex;
 }
 
-.form-editar-task__input {
+.form-edit-task__input {
   width: 100%;
   border: none;
   border-bottom: 2px solid #b8b8b8;
@@ -164,7 +164,7 @@
   margin-right: 20px;
 }
 
-.form-editar-task__btn {
+.form-edit-task__btn {
   border: none;
   background: var(--verde);
   cursor: pointer;
