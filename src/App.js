@@ -15,7 +15,7 @@ const App = () => {
       {
         id: 2,
         text: 'Go to the supermarket',
-        completed: false
+        completed: true
       },
     ]
   );
@@ -24,7 +24,7 @@ const App = () => {
     <div className='container'>
       <Header />
       <FormTasks tasks={tasks} changeTasks={changeTasks} />
-      <TasksList tasks={tasks} />
+      <TasksList tasks={tasks} changeTasks={changeTasks} />
     </div>
   );
 }

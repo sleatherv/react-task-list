@@ -1,7 +1,18 @@
 import React from 'react';
 import Task from './Task';
 
-const TasksList = ({ tasks }) => {
+const TasksList = ({ tasks, changeTasks }) => {
+    const toggleCompleted = (taskId) => {
+        changeTasks(tasks.map((task) => {
+            if (task.id === taskId) {
+                return {
+                    ...task,
+                    completed: !task.completed
+                }
+            }
+            return task;
+        }));
+    }
     return (
         <ul className='list-tasks'>
             {
@@ -9,7 +20,9 @@ const TasksList = ({ tasks }) => {
                     ? tasks.map((task) => {
                         return <Task
                             key={task.id}
-                            task={task} />
+                            task={task}
+                            toggleCompleted={toggleCompleted}
+                        />
                     })
                     : <div className="list-tasks__message">~ No added tasks ~</div>
             }
