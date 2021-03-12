@@ -13,6 +13,25 @@ const TasksList = ({ tasks, changeTasks }) => {
             return task;
         }));
     }
+    const editTask = (taskId, newTaskText) => {
+        changeTasks(tasks.map((task) => {
+            if (task.id === taskId) {
+                return {
+                    ...task,
+                    text: newTaskText
+                }
+            }
+            return task;
+        }));
+    }
+    const deleteTask = (taskId) => {
+        changeTasks(tasks.filter((task) => {
+            if (task.id !== taskId) {
+                return task;
+            }
+            return;
+        }));
+    }
     return (
         <ul className='list-tasks'>
             {
@@ -22,6 +41,8 @@ const TasksList = ({ tasks, changeTasks }) => {
                             key={task.id}
                             task={task}
                             toggleCompleted={toggleCompleted}
+                            editTask={editTask}
+                            deleteTask={deleteTask}
                         />
                     })
                     : <div className="list-tasks__message">~ No added tasks ~</div>

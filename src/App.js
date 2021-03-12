@@ -15,7 +15,7 @@ const App = () => {
       {
         id: 2,
         text: 'Go to the supermarket',
-        completed: true
+        completed: false
       },
     ]
   );
