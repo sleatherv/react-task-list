@@ -15,16 +15,23 @@ const App = () => {
       {
         id: 2,
         text: 'Go to the supermarket',
-        completed: false
+        completed: true
       },
     ]
   );
-  console.log(tasks);
+  const [showCompleted, setShowCompleted] = useState(false);
+
   return (
     <div className='container'>
-      <Header />
+      <Header
+        setShowCompleted={setShowCompleted}
+        showCompleted={showCompleted} />
       <FormTasks tasks={tasks} changeTasks={changeTasks} />
-      <TasksList tasks={tasks} changeTasks={changeTasks} />
+      <TasksList
+        tasks={tasks}
+        changeTasks={changeTasks}
+        showCompleted={showCompleted}
+      />
     </div>
   );
 }
