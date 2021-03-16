@@ -11,17 +11,21 @@ const FormTasks = ({ tasks, changeTasks }) => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        changeTasks(
-            [
-                ...tasks,
-                {
-                    id: uuidv4(),
-                    text: inputTask,
-                    completed: false
-                }
-            ]
-        );
+        if (inputTask !== '') {
+            changeTasks(
+                [
+                    ...tasks,
+                    {
+                        id: uuidv4(),
+                        text: inputTask,
+                        completed: false
+                    }
+                ]
+            );
+            changeInputTask('');
+        } else {
+            alert('Please write a task');
+        }
     }
     return (
         <form action="" className='form-tasks' onSubmit={handleSubmit}>
