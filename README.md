@@ -4,13 +4,13 @@
     - React Hooks
     - LocalStorage
 
-You can use it or improve it
+You can use it or improve it.
 
 ## You can clone the repository and run:
 
 ### `npn install`
 
-Install all dependencies and libraries listed in the file package.json
+Install all dependencies and libraries listed in the file package.json.
 
 ## Available Scripts
 
