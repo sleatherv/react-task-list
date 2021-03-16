@@ -31,7 +31,7 @@ export default function Task({ task, toggleCompleted, editTask, deleteTask }) {
                         <button
                             type="submit"
                             className="form-edit-task__btn"
-                        >Actualizar</button>
+                        >Update</button>
                     </form>
                     :
                     task.text
